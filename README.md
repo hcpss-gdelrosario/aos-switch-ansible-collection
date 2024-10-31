@@ -62,6 +62,7 @@ all:
       ansible_password: password
       ansible_connection: local  # REST API connection method
       ansible_network_os: arubanetworks.aos_switch.arubaoss  # Do not change
+      ansible_use_ssl: true # Connect via HTTPS SSL
 ```
 
 Setting Environment Variables

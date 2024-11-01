@@ -54,7 +54,7 @@ arubaoss_provider_spec = {
                                ['ANSIBLE_NET_PASSWORD']), no_log=True),
     'ssh_keyfile': dict(fallback=(env_fallback,
                                   ['ANSIBLE_NET_SSH_KEYFILE']), type='path'),
-    'use_ssl': dict(type='bool'),
+    'use_ssl': dict(default=True, type='bool'),
     'use_proxy': dict(default=False, type='bool'),
     'transport': dict(default='aossapi'),
     'timeout': dict(type='int'),
